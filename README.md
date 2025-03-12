@@ -2,21 +2,31 @@
 
 In this repository, we explore the use of Radial Basis Functions (RBFs) in Support Vector Machines (SVM), which are essentially hyperplanes that aim to linearly separate data points. For example, in a case where there are two classes of data points, the SVM aims to find the hyperplane that maximises the minimum distance between the hyperplane (i.e. decision boundary) and the two separate classes of data points. In this case, we define the hyperplanes $H$ such that:
 
-$wx_i+b \geq + 1$ when $y_i = +1$ and $\newline$
-$wx_i+b \leq - 1$ when $y_i = -1$
+```math
 
-and
+wx_i+b \geq + 1 \quad when \quad y_i = +1 \newline
+wx_i+b \leq - 1 \quad when \quad y_i = -1
 
-$H_1$ and $H_2$ are the hyperplanes:
+```
 
-$H_1: wx_i + b = +1 \newline$
-$H_2: wx_i + b = -1$
+and $H_1$ and $H_2$ are the hyperplanes:
+
+```math
+
+H_1: wx_i + b = +1 \newline
+H_2: wx_i + b = -1
+
+```
 
 then the points on hyperplanes $H_1$ and $H_2$ are the tips of the support vectors (Note: Support vectors are the data points that lie closest to the decision boundary and fully specify it.)
 
 We can then define another plane $H_0$ which is equidistant from $H_1$ and $H_2$, that will form the decision surface separating the two classes:
 
-$wx_i+b = 0$
+```math
+
+wx_i+b = 0
+
+```
 
 The above structures can be illustrated as the following:
 
@@ -55,9 +65,9 @@ In this example, we show how SVMs with different kernels (e.g. linear, polynomia
 For illustration, the decision boundaries plotted for each of these cases are shown below:
 
 <p align="center">
-<img src="half_moon_svms.png" width="1024" height="600">
+<img src="half_moon_svms.png" width="1024" height="450">
 </p>
 
 <p align="center">
-<img src="double_circle_svms.png" width="1024" height="600">
+<img src="double_circle_svms.png" width="1024" height="450">
 </p>
