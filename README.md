@@ -4,7 +4,8 @@ In this repository, we explore the use of Radial Basis Functions (RBFs) in Suppo
 
 ```math
 
-wx_i+b \geq + 1 \quad when \quad y_i = +1 \newline
+wx_i+b \geq + 1 \quad when \quad y_i = +1 \\
+
 wx_i+b \leq - 1 \quad when \quad y_i = -1
 
 ```
@@ -13,7 +14,8 @@ and $H_1$ and $H_2$ are the hyperplanes:
 
 ```math
 
-H_1: wx_i + b = +1 \newline
+H_1: wx_i + b = +1 \\
+
 H_2: wx_i + b = -1
 
 ```
